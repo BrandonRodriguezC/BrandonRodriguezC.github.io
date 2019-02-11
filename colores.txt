@@ -1,6 +1,0 @@
-Naranja:
-claro F08516
-oscuro F26101
-Azul:
-oscuro 1E4363
-input background 142D42
