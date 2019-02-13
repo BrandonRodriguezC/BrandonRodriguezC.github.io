@@ -115,10 +115,9 @@
 }
 
 .table3 {
-  padding: 20px;
   display: grid;
   grid-gap: 0px;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
 }
 
 @media only screen and (max-width: 700px) {
@@ -269,17 +268,15 @@ background-color: #40ADF7;
 }
 /* ------------------------------ Icons ---------------------------------------- */
 .fa {
-  padding: 20px;
+  padding: 10px;
   font-size: 30px;
-  width: 30px;
+  width: auto;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
 }
 
 .fa:hover {
-    opacity: 0.7;
+  background:black;
 }
 .fa-reddit {
   background: #ff5700;
