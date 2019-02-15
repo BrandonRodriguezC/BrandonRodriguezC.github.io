@@ -10,7 +10,6 @@ const img4 = document.getElementById('myImg4');
 main();
 
 function presentingModal(b,c){
- console.log(b);
   modal.style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = c;
