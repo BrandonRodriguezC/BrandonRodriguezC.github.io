@@ -127,5 +127,19 @@ border-radius: 3px
     display: block;
    visibility: visible
   }
+  .grid-certification{
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-auto-rows: 500px;
+  }
+
+  .grid-hobbies{
+    grid-auto-rows: 400px;
+  }
+
+  .grid-projects{
+    grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+    grid-auto-rows: 100px;
+  }
+
 
 }
