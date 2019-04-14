@@ -115,6 +115,7 @@ border-radius: 3px
 }
 .mySlides {display:none;}
 
+
 @media only screen and (max-width: 600px) {
   .sticky-menu-container{
     display: none
@@ -138,7 +139,10 @@ border-radius: 3px
 
   .grid-projects{
     grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
-    grid-auto-rows: 100px;
+    grid-auto-rows: 140px;
+  }
+  .project{
+    margin-bottom: 25px
   }
 
 
