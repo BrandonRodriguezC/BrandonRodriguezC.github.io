@@ -4,7 +4,18 @@
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
   Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-
+.banner{
+display: none;
+visibility: hidden;
+padding: 5px;
+border-bottom: solid black 3px;
+border-radius: 3px
+}
+.banner p{
+  width: 90%;
+  font-size: 11px;
+  font-weight: lighter
+}
 .sticky-menu-container{
   padding: 5px;
   width: 20%;
@@ -77,8 +88,9 @@
   height: 100%;
   object-fit: cover;
 }
-
+/* hola */
 .grid-projects {
+  align-content: stretch;
   padding: 20px;
   display: grid;
   grid-gap: 10px;
@@ -102,3 +114,18 @@
   text-align: center
 }
 .mySlides {display:none;}
+
+@media only screen and (max-width: 600px) {
+  .sticky-menu-container{
+    display: none
+  }
+  .content {
+    margin-left: 0%; 
+    width: 100%;
+  }
+  .banner{
+    display: block;
+   visibility: visible
+  }
+
+}
