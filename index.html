@@ -2,18 +2,23 @@
 
 <head>
   <meta charset="UTF-8" />
+  <!-- <meta http-equiv="Content-Type" content="text/nosniff"> -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="repo-widget/github-widget.css" rel="stylesheet" type="text/css" />
   <title>Portafolio Brandon Rodriguez</title>
 </head>
 
 <body>
-<div class="banner">
-  <h1>Brandon Rodriguez</h1>
-  <p >Hola! soy un estudiante autodidacta apasionado por el desarrollo de software y su
+  <!-- <div class=color>
+    <button type="button" onclick="color()">Color</button>
+  </div> -->
+  <div class="banner">
+    <h1>Brandon Rodriguez</h1>
+    <p>Hola! soy un estudiante autodidacta apasionado por el desarrollo de software y su
       investigacion.</p>
-</div>
+  </div>
 
   <div class="sticky-menu-container">
     <div>
@@ -41,7 +46,7 @@
         </li>
       </ul>
     </nav>
-    <nav>
+    <!-- <nav>
       <ul>
         <li>
           <a href="https://twitter.com/terriblebrandon?lang=es">Twitter</a>
@@ -53,7 +58,7 @@
           <a href="https://open.spotify.com/user/br14-6-16?si=N66iktSISue4NsIZyZv3Zw">Spotify</a>
         </li>
       </ul>
-    </nav>
+    </nav> -->
     <div>
       <p style="font-weight:inherit">Hola! soy un estudiante autodidacta apasionado por el desarrollo de software y su
         investigacion.</p>
@@ -90,7 +95,7 @@
     <h1 id="Proyectos">Proyectos</h1>
     <p>Todos mis trabajos destacados estan en mi cuenta de GitHub por si los quieres visitar, podras ver como funcionan
       y su completa documentacion.</p>
-    <div class="grid-projects">
+    <!-- <div class="grid-projects">
 
       <div class="project">
 
@@ -148,10 +153,12 @@
         <div class="descProject">
           <p>Electric Charge Simulator</p>
         </div>
-      </div>
+      </div> -->
 
 
-    </div>
+    <!-- </div> -->
+    <div class="github-widget" data-user="BrandonRodriguezC"></div>
+
     <h1 id="FormacionAcademica">Formacion academica</h1>
     <p>Mi desempeño profesional se basa en el desarrollo de algoritmos en funcion de solucionar problemas en lenguaje
       Java. Entre mis intereses se encuentra el diseño y desarrollo web o de material visual, siendo capaz de usar
@@ -233,6 +240,27 @@
             x[myIndex - 1].style.display = "block";
             setTimeout(carousel, 3000); // Change image every 2 seconds
           }
+         
+          function color() {
+           
+           var rootValue=getComputedStyle(document.documentElement).getPropertyValue('--colorsB');
+           var num=1;
+           
+            if( rootValue.localeCompare("black")){
+              num=2;
+            }else if (rootValue.localeCompare("white")){
+              num=1;
+            }
+            if (num==2){
+              document.documentElement.style.setProperty('--colorsB', 'white');
+              document.documentElement.style.setProperty('--colorsW', 'black');
+            }else{
+              document.documentElement.style.setProperty('--colorsB', 'black');
+              document.documentElement.style.setProperty('--colorsW', 'white');
+            }
+              
+          
+          }
         </script>
       </div>
       <div class="hobbie">
@@ -243,5 +271,5 @@
   </div>
 
 </body>
-
+<script src="repo-widget/github-widget.min.js"></script>
 </html>
