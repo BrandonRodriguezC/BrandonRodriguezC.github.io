@@ -5,271 +5,77 @@
   <!-- <meta http-equiv="Content-Type" content="text/nosniff"> -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link href="repo-widget/github-widget.css" rel="stylesheet" type="text/css" />
   <title>Portafolio Brandon Rodriguez</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
 
 <body>
-  <!-- <div class=color>
-    <button type="button" onclick="color()">Color</button>
-  </div> -->
-  <div class="banner">
-    <h1>Brandon Rodriguez</h1>
-    <p>Hola! soy un estudiante autodidacta apasionado por el desarrollo de software y su
-      investigacion.</p>
-  </div>
-
-  <div class="sticky-menu-container">
-    <div>
-      <h1>Brandon Rodriguez</h1>
-    </div>
+  <div class="navigator">
     <nav>
-      <ul>
-        <li>
-          <a href="#Perfil">Perfil</a>
-        </li>
-        <li>
-          <a href="#Areas">Areas</a>
-        </li>
-        <li>
-          <a href="#Proyectos">Proyectos</a>
-        </li>
-        <li>
-          <a href="#FormacionAcademica">Formacion Academica</a>
-        </li>
-        <li>
-          <a href="#Certificados">Certificados</a>
-        </li>
-        <li>
-          <a href="#QuienSoy">Quien soy?</a>
-        </li>
-      </ul>
+      <li class="navigation-items "><a href="/Formacion.html" >FORMACION</a></li>
+      <li class="navigation-items "><a href="/Proyectos.html" >PROYECTOS</a></li>
+      <li class="navigation-items "><a href="/" >PERFIL</a></li>
     </nav>
-    <!-- <nav>
-      <ul>
-        <li>
-          <a href="https://twitter.com/terriblebrandon?lang=es">Twitter</a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/terriblebrandon/">Instagram</a>
-        </li>
-        <li>
-          <a href="https://open.spotify.com/user/br14-6-16?si=N66iktSISue4NsIZyZv3Zw">Spotify</a>
-        </li>
-      </ul>
-    </nav> -->
-    <div>
-      <p style="font-weight:inherit">Hola! soy un estudiante autodidacta apasionado por el desarrollo de software y su
-        investigacion.</p>
-    </div>
   </div>
+  
   <div class="content">
-    <h1 id="Perfil">Perfil</h1>
-    <p>Cuento con capacidades investigativas y deductivas, facilidad de aprendizaje, creatividad, disciplina y con un
-      gran compromiso frente a las labores adquiridas. Capacidades de trabajo en equipo y liderazgo, logrando excelentes
-      relaciones personales y laborales.</p>
-    <h1 id="Areas">Areas </h1>
-    <p>Soy un chico muy curioso e inquieto, soy muy dedicado a mis estudios y me encanta cada area de mi carrera.
-      Actualmente estoy en 5 semestre en Ingenieria en Sistemas, con una formacion enfocada en:</p>
-    <ul>
-      <li>
-        <p>Java & JavaScript</p>
-      </li>
-      <li>
-        <p>Programación IoT</p>
-      </li>
-      <li>
-        <p>R & estadistica</p>
-      </li>
-      <li>
-        <p>Modelado de bases de datos</p>
-      </li>
-      <li>
-        <p>Sistemas operativos e Infrastructuras AWS</p>
-      </li>
-      <li>
-        <p>Microservicios y APIs</p>
-      </li>
-    </ul>
-    <h1 id="Proyectos">Proyectos</h1>
-    <p>Todos mis trabajos destacados estan en mi cuenta de GitHub por si los quieres visitar, podras ver como funcionan
-      y su completa documentacion.</p>
-    <!-- <div class="grid-projects">
-
-      <div class="project">
-
-        <img src="https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png" alt="">
-
-        <div class="descProject">
-          <p>Wronskiano</p>
+    <section class="banner">
+      <div class="tittle-banner__top"></div>
+      <div class="tittle-banner__bottom"></div>
+      <h1 class="tittle-banner-text">
+        <span class="tittle-banner-text-top">Brandon</span>
+        <span class="tittle-banner-text-top">Rodriguez</span>
+        <span class="tittle-banner-text-bottom " >DESARROLLADOR</span>
+        <span class="tittle-banner-text-bottom " >& ESTUDIANTE</span>
+      </h1>
+    </section>
+    <section class="description">
+      <div class="description-container">
+        <div clas="description-container-title">
+          <h1>Perfil</h1>
+        </div>
+        <div class="description-container-text">
+          <p>Cuento con capacidades investigativas y deductivas, facilidad de aprendizaje, creatividad, disciplina y con
+            un
+            gran compromiso frente a las labores adquiridas. Capacidades de trabajo en equipo y liderazgo, logrando
+            excelentes
+            relaciones personales y laborales.</p>
+        </div>
+        <div clas="description-container-title">
+          <h1>Areas</h1>
+        </div>
+        <div class="description-container-text">
+          <p>Soy un chico muy curioso e inquieto, soy muy dedicado a mis estudios y me encanta cada área de mi carrera.
+            Actualmente estoy en 5 semestre en Ingeniería en Sistemas, con una formación enfocada en:</p>
+          <ul>
+            <li>
+              <p>Desarrollo en Java & JavaScript</p>
+              <p>Programación IoT</p>
+              <p>Sistemas operativos e Infrastructuras</p>
+              <p>Redes y equipo en cisco</p>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <div class="project">
-        <img src="https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png" alt="">
-        <div class="descProject">
-          <p>BigOperand Library</p>
+
+    </section>
+    <hr class="splitter">
+    <section class="description">
+      <div class="description-container">
+        <div class="description-center">
+            <button>
+                <a href="/Formacion.html"> <h1>Formacion</h1></a> 
+            </button>
+            <button>
+                <a href="/Proyectos.html"><h1>Proyectos</h1></a> 
+            </button>  
         </div>
       </div>
-
-      <div class="project">
-        <img src="https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png" alt="">
-        <div class="descProject">
-          <p>Fourier Transformations</p>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png" alt="">
-        <div class="descProject">
-          <p>Short Path</p>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png" alt="">
-        <div class="descProject">
-          <p>Huffman Algorithm</p>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png" alt="">
-        <div class="descProject">
-          <p>Image Compression (SVD)</p>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png" alt="">
-        <div class="descProject">
-          <p>Graphs (Discrete Mathematics)</p>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png" alt="">
-        <div class="descProject">
-          <p>Electric Charge Simulator</p>
-        </div>
-      </div> -->
-
-
-    <!-- </div> -->
-    <div class="github-widget" data-user="BrandonRodriguezC"></div>
-
-    <h1 id="FormacionAcademica">Formacion academica</h1>
-    <p>Mi desempeño profesional se basa en el desarrollo de algoritmos en funcion de solucionar problemas en lenguaje
-      Java. Entre mis intereses se encuentra el diseño y desarrollo web o de material visual, siendo capaz de usar
-      programas como Adobe Ps, Ai, Pr y Lr.</p>
-    <p> TITULO DE BACHILLER (2004-2016): Mi periodo academico escolar fue en el Colegio Agustiniano Ciudad Salitre</p>
-    <p> Soy estudiante de la Universidad Piloto de Colombia en la sede de Bogotá D.C (2019)</p>
-    <h1 id="Certificados">Certificados</h1>
-    <p>Actualmente cuento con 4 certificados de la Alcaldia Mayor de Bogota, dos de ellos en Blockchain y dos restantes
-      en Big Data. Ademas, estoy cursando para certificarme en Modelos de Datos por medio de Oracle y cuento con
-      certificaciones de la Universidad Piloto en desarrollo de proyectos.</p>
-    <div class="grid-certification">
-      <div class="certification">
-        <img src="/media/Certificado-001.jpg" alt="">
-      </div>
-      <div class="certification">
-        <img src="/media/Certificado-(1)-001.jpg" alt="">
-      </div>
-      <div class="certification">
-        <img src="/media/Certificado-(2)-001.jpg" alt="">
-      </div>
-      <div class="certification">
-        <img src="/media/Certificado-(3)-001.jpg" alt="">
-      </div>
-    </div>
-    <h1 id="QuienSoy">Quien soy?</h1>
-    <p>Soy un chico que aparte de tener una pasion por la programacion, me encanta la musica, el arte, el cine, el
-      futbol y el diseño. Considero importante dejar esto en mi portafolio, ya que una empresa ademas de contratar a
-      alguien con capacidades para suplir sus necesidades, se contrata a un ser humano en donde sus gustos
-      o actitudes ayudan en la integracion en un equipo de trabajo.</p>
-    <div class="grid-hobbies">
-      <div class="hobbie">
-        <iframe src="https://open.spotify.com/embed/user/br14-6-16/playlist/4qYoxaS16Qo368utwHN62T" width="300"
-          height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      </div>
-      <div class="hobbie">
-        <img src="https://66.media.tumblr.com/a151a1d17761e69e323e8e6f440ba013/tumblr_phjmogweRM1s4zvvyo1_640.jpg"
-          width="300" alt="">
-      </div>
-      <div class="hobbie">
-        <img src="https://66.media.tumblr.com/7752a7761f7419e8240733d0a71dc8f5/tumblr_oq7jpn7WJJ1upk172o1_1280.gif"
-          width="300" alt="">
-      </div>
-      <div class="hobbie">
-        <img src="https://66.media.tumblr.com/19bd78b39eb70d2d6ab52282b1b20719/tumblr_pn145mQl121whzjuno1_1280.jpg"
-          width="300" alt="">
-      </div>
-      <div class="hobbie">
-        <div class="w3-content w3-section" style="max-width:500px">
-          <img class="mySlides"
-            src="https://66.media.tumblr.com/917073efb2ebb6bf57f27d23f1abea98/tumblr_o211pwdTyE1s8jjj4o2_500.gif"
-            style="width:100%">
-          <img class="mySlides"
-            src="https://66.media.tumblr.com/b2139f2d6584cb98b6f3d5196dc8ee36/tumblr_o211pwdTyE1s8jjj4o1_500.gif"
-            style="width:100%">
-          <img class="mySlides"
-            src="https://66.media.tumblr.com/5c57aac061eab198199b1da25ae37782/tumblr_o211pwdTyE1s8jjj4o6_500.gif"
-            style="width:100%">
-          <img class="mySlides"
-            src="https://66.media.tumblr.com/3e1e28163f299b41572047aebec026a2/tumblr_o211pwdTyE1s8jjj4o7_400.gif"
-            style="width:100%">
-          <img class="mySlides"
-            src="https://66.media.tumblr.com/95836ee2648e9ae2e62b3e2086de87b2/tumblr_o211pwdTyE1s8jjj4o9_500.gif"
-            style="width:100%">
-        </div>
-        <script>
-          var myIndex = 0;
-          carousel();
-
-          function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) {
-              myIndex = 1
-            }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 3000); // Change image every 2 seconds
-          }
-         
-          function color() {
-           
-           var rootValue=getComputedStyle(document.documentElement).getPropertyValue('--colorsB');
-           var num=1;
-           
-            if( rootValue.localeCompare("black")){
-              num=2;
-            }else if (rootValue.localeCompare("white")){
-              num=1;
-            }
-            if (num==2){
-              document.documentElement.style.setProperty('--colorsB', 'white');
-              document.documentElement.style.setProperty('--colorsW', 'black');
-            }else{
-              document.documentElement.style.setProperty('--colorsB', 'black');
-              document.documentElement.style.setProperty('--colorsW', 'white');
-            }
-              
-          
-          }
-        </script>
-      </div>
-      <div class="hobbie">
-        <img src="https://66.media.tumblr.com/1f1043ec034dfa9dec001d8bbf2ea04f/tumblr_po3m5pzzDu1t1cy7no1_1280.jpg"
-          width="300" alt="">
-      </div>
-    </div>
+    </section>
   </div>
-
 </body>
-<script src="repo-widget/github-widget.min.js"></script>
+<script src="/script.js"></script>
 </html>

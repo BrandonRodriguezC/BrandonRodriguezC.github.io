@@ -1,11 +1,13 @@
 .gw-repo-outer {
+  
   float: left;
-  width: 45%;
+  width: 20%;
 }
 .gw-repo-outer:nth-child(2n + 1) {
   clear: left;
 }
 .gw-repo {
+  
   padding: 5px;
   margin: 5px;
   border-top: 1px solid #ccc;
