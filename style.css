@@ -226,12 +226,13 @@ hr{
 
 .grid {
 	margin:0;
-	padding:0;
+	padding:10px;
 	border:none;
   display:inline-block;
   width: 33%;
   height: auto;
   flex: auto;
+
 }
 .grid:hover  {
 background: var(--color);
