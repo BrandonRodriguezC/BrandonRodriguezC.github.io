@@ -1,80 +1,128 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <!-- <meta http-equiv="Content-Type" content="text/nosniff"> -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="repo-widget/github-widget.css" rel="stylesheet" type="text/css" />
-  <title>Portafolio Brandon Rodriguez</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
-</head>
+  <body>
 
-<body>
+<div class="sticky">
   <nav>
-    <ul>
-      <li class="navigation-items "><a href="/">PERFIL</a></li>
-      <li class="navigation-items "><a href="/Proyectos.html">PROYECTOS</a></li>
-      <li class="navigation-items "><a href="/Formacion.html">FORMACION</a></li>
-    </ul>
+  <ul class="nav-links-hidden" id="navLinks">
+    <img  class="profile-pic" src="https://instagram.fbog4-1.fna.fbcdn.net/v/t51.2885-15/e35/32150372_184546085532021_9109630986345250816_n.jpg?_nc_ht=instagram.fbog4-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=D3n26RgAX5YAX8sOSBJ&oh=d35f25d71fcad7242ae941d04d7223d9&oe=5EA8D1E7" alt="">
+    <p> <b>Brandon Rodriguez (20 years old)</b> colombian software developer. I am a very curious and restless boy, I am very dedicated to my studies and I love every area of my career.
+</p>
+    <li><a href="#firstRow" onclick="hideMenu()">About</a></li>
+    <li><a href="#firstRow" onclick="hideMenu()">Academics</a></li>
+    <li><a href="#secondRow" onclick="hideMenu()">Projects</a></li>
+  </ul>
+    <div class="menu" onclick="showMenu()">
+      <h2>Menu</h2>
+    </div>
   </nav>
+</div>
 
-  <div class="content">
-    <section class="banner">
-      <div class="tittle-banner__top"></div>
-      <div class="tittle-banner__bottom"></div>
-      <h1 class="tittle-banner-text">
-        <span class="tittle-banner-text-top">Brandon</span>
-        <span class="tittle-banner-text-top">Rodriguez</span>
-        <span class="tittle-banner-text-bottom ">DESARROLLADOR</span>
-        <span class="tittle-banner-text-bottom ">de software</span>
-      </h1>
-    </section>
-    <section class="description">
-      <div class="description-container">
-        <div clas="description-container-title">
-          <h1>Perfil</h1>
-        </div>
-        <div class="description-container-text">
-          <p>Cuento con capacidades investigativas y deductivas, facilidad de aprendizaje, creatividad, disciplina y con
-            un
-            gran compromiso frente a las labores adquiridas. Capacidades de trabajo en equipo y liderazgo, logrando
-            excelentes
-            relaciones personales y laborales.</p>
-        </div>
-        <div clas="description-container-title">
-          <h1>Areas</h1>
-        </div>
-        <div class="description-container-text">
-          <p>Soy un chico muy curioso e inquieto, soy muy dedicado a mis estudios y me encanta cada área de mi carrera.
-            Actualmente estoy en 5 semestre en Ingeniería en Sistemas, con una formación enfocada en:</p>
-          <ul>
-            <li>
-              <p>Desarrollo en Java & JavaScript</p>
-              <p>Programación IoT</p>
-              <p>Sistemas operativos e Infrastructuras</p>
-              <p>Redes y equipo en cisco</p>
-            </li>
-          </ul>
-        </div>
-        <div style="text-align: center">
-          <button>
-            <a href="/Formacion.html">
-              <h1>Formacion</h1>
-            </a>
-          </button>
-          <button>
-            <a href="/Proyectos.html">
-              <h1>Proyectos</h1>
-            </a>
-          </button>
-        </div>
+
+
+<div class="mainContent">
+  <div class="gif" id="second">
+      <div class="logo">
+        <h1>Brandon  Rodriguez</h1>
+        <p>Software engineer student</p>
       </div>
+  </div>
+  <div class="row" id="firstRow"  onclick="location.href='#secondRow';">
+    <i class="im im-angle-right" ></i>
+  </div>
 
+  <div class="gif flex" id="third">
+    <div class="info top left" id="About">
+      <div class="content">
+        <h1>About me</h1>
+        <p>I have investigative and deductive skills, ease of learning, creativity, discipline and a great commitment to the work acquired. Capabilities of teamwork and leadership, achieving excellent personal and work relationships.</p>
+        <h2>Work areas:</h2>
+        <ul >
+          <!-- dir="rtl" -->
+          <li>operative sistems (specially linux)</li>
+          <li>java development</li>
+          <li>frontend development</li>
+          <li>databases</li>
+          <li>network systems (cisco, cumulus, arista)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="info bottom right" id="Academics">
+      <div class="content">
+        <h1>Academics</h1>
+        <p>My professional performance is based on the development of algorithms in order to solve problems in Java language. I currently have 4 certificates from the Mayor's Office of Bogota, two of them in Blockchain and two remaining in Big Data. In addition, I am certified in Database Design through Oracle and have certifications from the Pilot University in project development.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="secondRow">
+    <i class="im im-angle-right" href="#Projects"></i>
+  </div>
+  <div class="gif flex" id="first">
+  <div class="info bottom left" id="Projects">
+    <div class="content">
+      <h1>Projects</h1>
+      <p>All my featured works are in my GitHub account in case you want to visit them, you can see how they work and their complete documentation. For now, some of the descriptions are in English for convenience when interacting with the Git community.</p>
+    </div>
+  </div>
+  <div class="info upper-top right" id="one">
+    <div class="grid">
+      <div class="project"> <p>Cubo Rubick</p> </div>
+      <div class="project"> <p>Simulador de Cargas</p> </div>
+      <div class="project"> <p>App cliente-servidor Transaccion Transporte</p> </div>
+      <div class="project"> <p>Game of Life</p> </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Experimentall -->
+<!-- <div class="space">
+  <div class="Game">
+    <div class="cell">p</div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+  </div>
+</div> -->
 
   </div>
-</body>
 
+  </body>
+  <script src="script.js">
+
+  </script>
 </html>
